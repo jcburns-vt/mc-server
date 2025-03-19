@@ -1,4 +1,3 @@
-version: '3.9'
 
 services:
   minecraft:
@@ -10,7 +9,7 @@ services:
       EULA: "TRUE"
       MEMORY: "2G"
     volumes:
-      - ./data:/data
+      - ~/minecraft-data:/data
     restart: unless-stopped
 
   ngrok:
